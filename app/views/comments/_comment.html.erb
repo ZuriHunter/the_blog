@@ -1,0 +1,8 @@
+<p><%= comment.author %>, <%= comment.email_address %> said</p>
+
+  <blockquote>
+    <%= comment.body %>
+  </blockquote>
+
+<%= link_to "Delete", [comment.post, comment], method: :delete, data: {confirm: "Are You Sure?"} %>
+  
