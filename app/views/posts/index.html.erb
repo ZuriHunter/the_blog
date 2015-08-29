@@ -1,3 +1,56 @@
+ <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('londonpano.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>The Rails Blog</h1>
+                        <hr class="small">
+                        <span class="subheading">Rails Crash Course: Section 1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+          <% @posts.each do |post| %>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                        <h2 class="post-title">
+                           <%= link_to post.title, post %>
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Problems look mighty small from 150 miles up
+                        </h3>
+                    <p class="post-meta">Posted by <%= post.author %> on <%= friendly_date post.created_at %></p>
+                  <p><%= link_to 'Show', post %> | <%= link_to 'Edit', edit_post_path(post) %> | <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %> </p>
+                    <% end %>
+                </div>
+                <hr>
+          </div>
+      </div>
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+      
+
+    <hr>
+
+
+
+
+
+
+
+
 <p id="notice"><%= notice %></p>
 
    
