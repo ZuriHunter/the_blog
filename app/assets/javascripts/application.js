@@ -12,5 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
+//= require bootstrap.min
+//= require clean-blog
+//= require clean-blog.min
 //= require turbolinks
 //= require_tree .

@@ -12,4 +12,16 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap
+ *= require bootstrap.min
+ *= require clean-blog
+ *= require clean-blog.min
  */
+
+#home_page{
+  background-image: url('londonpano.jpg')
+}
+
+.post-header{
+  color: black;
+}
