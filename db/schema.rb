@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150825143120) do
+ActiveRecord::Schema.define(version: 20150831194721) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "author"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20150825143120) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "author"
+    t.string   "desc"
   end
 
 end

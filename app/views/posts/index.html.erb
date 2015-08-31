@@ -24,7 +24,7 @@
                            <%= link_to post.title, post %>
                         </h2>
                         <h3 class="post-subtitle">
-                            Problems look mighty small from 150 miles up
+                          <%= post.desc %>
                         </h3>
                     <p class="post-meta">Posted by <%= post.author %> on <%= friendly_date post.created_at %></p>
                   <p><%= link_to 'Show', post %> | <%= link_to 'Edit', edit_post_path(post) %> | <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %> </p>
@@ -34,19 +34,15 @@
           </div>
            <% end %>
       </div>
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                  <li class="next" >
+      <li class="new-post-button" >
                       <%= link_to 'New Post', new_post_path %>
-                  </li>
-                </ul>
-            </div>
+      </li>
+      <hr>
+      <br>
       
+      <%= will_paginate @posts, renderer: BootstrapPagination::Rails, previous_label: "Newer", next_label: "Older", inner_window: 1, outer_window: 0 %>
 
-    <hr>
+    
 
 <p id="notice"><%= notice %></p>
 

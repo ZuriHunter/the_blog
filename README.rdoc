@@ -2,7 +2,7 @@ The Rails Blog
 
 This is a basic Ruby on Rails blog. The instructions I followed in creating
 this blog was from Anthony Lewis "Rails Crash Course: A No-Nonsense Guide to Rails Development."
-Future features I will be adding in the future is basic static pages such as "About" and "Contact" page, User Authentication without using Devise Gem, and Image Uploading.
+Future features I will be adding in the future is basic static pages such as "About" and "Contact" page and User Authentication without using Devise Gem.
 
 The template I incorporated for the blog is from startbootstrap at this link,
 http://startbootstrap.com/template-overviews/clean-blog/. 
