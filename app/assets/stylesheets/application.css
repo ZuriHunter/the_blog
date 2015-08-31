@@ -17,3 +17,11 @@
  *= require clean-blog
  *= require clean-blog.min
  */
+
+#home_page{
+  background-image: url('londonpano.jpg')
+}
+
+.post-header{
+  color: black;
+}
