@@ -8,7 +8,8 @@ The template I incorporated for the blog is from startbootstrap at this link,
 http://startbootstrap.com/template-overviews/clean-blog/. 
 
 The tutorial I used to set up the mailing feature for the contact form is this link,
-https://rubyonrailshelp.wordpress.com/2014/01/02/setting-up-mailer-using-devise-for-forgot-password/. 
+https://rubyonrailshelp.wordpress.com/2014/01/02/setting-up-mailer-using-devise-for-forgot-password/
+and https://rubyonrailshelp.wordpress.com/2014/01/08/rails-4-simple-form-and-mail-form-to-make-contact-form/.
 
 This blog cover Chapters 1-6 Section 1.
 <tt>rake doc:app</tt>.
