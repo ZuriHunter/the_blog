@@ -10,6 +10,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
+gem 'simple_form', '~> 3.1.0'
+gem 'mail_form', '~> 1.5.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
@@ -17,6 +19,7 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring', '~> 1.3.6'
+  gem 'foreman'
 end
 
 group :production do
